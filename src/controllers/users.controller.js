@@ -4,6 +4,6 @@ import {userModel} from '../models/users.model.js';
 export const userController = async (req, res) => {
   const userData = await userModel();
   // Write your code here 
-  //console.log(userData);
+  console.log(userData);
   res.render('index',{products : userData});
 };
